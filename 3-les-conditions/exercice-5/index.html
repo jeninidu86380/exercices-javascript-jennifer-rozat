@@ -7,9 +7,9 @@
 </head>
 <body>
     <script>
-        let note = prompt("entrez la note :");
+        let note = parceInt(prompt("entrez la note :"));
         
-        if (note<12) {
+        if (note < 12) {
             console.log("pas de mention");
         } else if (note >= 12 && note < 14) {
             console.log("passable");
