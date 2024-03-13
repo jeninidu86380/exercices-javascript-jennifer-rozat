@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let note = prompt("entrez la note :");
+        
+        if (note<12) {
+            console.log("pas de mention");
+        } else if (note >= 12 && note < 14) {
+            console.log("passable");
+        } else if (note >= 14 && note < 16) {
+            console.log("bien");
+        } else if (note >= 16 && note < 18) {
+            console.log("très bien");
+        } else if (note >= 18 && note <20) {
+            console.log("excellent");
+        } else if (note == 20) {
+            console.log("extraordinaire");
+        }
+    </script>
+</body>
+</html>
