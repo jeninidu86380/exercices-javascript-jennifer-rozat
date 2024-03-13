@@ -7,8 +7,11 @@
 </head>
 <body>
     <script>
-        let age = prompt("quel est votre âge?");
-        if (age>=18){
+        let age = parseInt(prompt("quel est votre âge?"));
+
+        // console.log(typeof age);
+        
+        if (age >= 18){
             console.log("vous êtes majeur.");
         } else {
             console.log ("vous êtes mineur.");
