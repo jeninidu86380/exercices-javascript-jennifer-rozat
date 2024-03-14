@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Mot de passe valide 
+        const motDePasseValide = "coucou";
+        // Demande à l'utilisateur de saisir un mot de passe
+        let motDePasseSaisi = prompt("Veuillez entrer le mot de passe :");
+        // Tant que le mot de passe n'est pas bon, continuer à demander le mot de passe jusqu'à ce qu'il soit bon
+        while (motDePasseValide !== motDePasseSaisi) {
+            // Affiche un message d'erreur si le mot de passe est incorrect
+            // Demande à nouveau à l'utilisateur de saisir un mot de passe
+            motDePasseSaisi = prompt("Mot de passe incorrect, essayez à nouveau :");
+        } 
+        // Si le mot de passe est correct, affiche un message d'accès autorisé
+        console.log("Accès autorisé.");  
+    </script>
+</body>
+</html>
