@@ -17,11 +17,11 @@ La moyenne des nombres du tableau est 17.4
 Le plus grand nombre du tableau est 47
 Le plus petit nombre du tableau est 3*/
         const tableau = [10, 22, 3, 47, 5];
-        let somme = 0;
-        let moyenne = 0;
+        let somme = 0; 
+        let moyenne = 0;    //déclare les variables à 0
         let max = tableau[0]; 
         let min = tableau[0]; 
-        for (let i = 0; i < tableau.length; i++) {
+        for (let i = 0; i < tableau.length; i++) { //let i=0 : déclare la variable i et l'initialise à 0, continue la boucle et augmente la valeur de 1 à chaque itération.
             somme += tableau[i];
             if (tableau[i] > max) {
                 max = tableau[i];

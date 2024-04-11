@@ -35,11 +35,11 @@ let petitsMots = []; let grandsMots = [];     Résultat dans la console : Il y a
         ];
         let petitsMots = [];
         let grandsMots = [];
-        for (let mot of mots) {
+        for (let mot of mots) { //si les mots font moins de 7, pousse les dans petitsMots
             if (mot.length < 7) {
                 petitsMots.push(mot);
             } else {
-                grandsMots.push(mot);
+                grandsMots.push(mot); // sinon pousse dans grandsMots
             }
         }
         console.log("Il y a " + petitsMots.length + " petits mots et " + grandsMots.length + " grands mots.");
