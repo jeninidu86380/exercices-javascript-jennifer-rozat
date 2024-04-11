@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice5</title>
+</head>
+<body>
+    <script>
+/*à l’aide d’une boucle for..of, bouclez sur un tableau de jours ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"] et affichez le résultat ci-dessous.
+ Résultat dans la console :
+Lundi, des patates
+Mardi, des patates
+Mercredi, des patates
+Jeudi, des patates
+Vendredi, des patates
+Samedi, des patates
+Dimanche, des patates aussi !*/
+
+        const jours = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+        for (const jour of jours) {
+            if (jour === "dimanche") {
+                console.log(jour + " des patates aussi ! ");
+            } else {
+                console.log(jour + " des patates ");
+            }   
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice7</title>
+</head>
+<body>
+    <script>
+/* À partir d'un tableau de nombres donné, effectuez les opérations suivantes à l’aide d’une boucle :
+1. Calculez la somme des nombres et affichez "La somme des nombres du tableau est : SOMME".
+2. Calculez la moyenne des nombres et affichez "La moyenne des nombres du tableau est : MOYENNE".
+3. Trouvez le plus grand nombre du tableau et affichez "Le plus grand nombre du tableau est : MAX".
+4. Trouvez le plus petit nombre du tableau et affichez "Le plus petit nombre du tableau est : MIN".  =   const tableau = [10, 22, 3, 47, 5]  Résultat dans la console :
+La somme des nombres du tableau est 87
+La moyenne des nombres du tableau est 17.4
+Le plus grand nombre du tableau est 47
+Le plus petit nombre du tableau est 3*/
+        const tableau = [10, 22, 3, 47, 5];
+        let somme = 0;
+        let moyenne = 0;
+        let max = tableau[0]; 
+        let min = tableau[0]; 
+        for (let i = 0; i < tableau.length; i++) {
+            somme += tableau[i];
+            if (tableau[i] > max) {
+                max = tableau[i];
+            }
+            if (tableau[i] < min) {
+                min = tableau[i];
+            }
+        }
+        moyenne = somme / tableau.length;
+        console.log("La somme des nombres du tableau est : " + somme);
+        console.log("La moyenne des nombres du tableau est : " + moyenne);
+        console.log("Le plus grand nombre du tableau est : " + max);
+        console.log("Le plus petit nombre du tableau est : " + min);
+
+    </script>
+</body>
+</html>

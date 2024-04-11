@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice4</title>
+</head>
+<body>
+    <script>
+/*À l'aide d'une boucle for, réalisez les tâches suivantes :
+1. Remplissez un tableau vide avec les 10 premiers nombres, puis affichez "Les dix premiers nombres sont : 1, 2, 3, 4, 5, 6, 7, 8, 9, 10".
+2. Remplissez un deuxième tableau vide avec les 10 premiers nombres pairs, puis affichez "Les dix premiers nombres pairs sont : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20".
+Résultat dans la console :
+Les dix premiers nombres sont : 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+Les dix premiers nombres pairs sont : 2, 4, 6, 8, 10, 12, 14, 16, 18, 20*/
+        let tableauNombres = [];
+        for (let i = 1; i <= 10; i++) {
+            tableauNombres.push(i)
+        }
+        console.table(tableauNombres);
+        console.log("les dix premiers nombres sont : ");
+        console.log(tableauNombres);
+        let tableauNombresPairs = [];
+        for (let i = 2; i <= 20; i+= 2) {
+            tableauNombresPairs.push(i)
+        }
+        console.table(tableauNombresPairs);
+        console.log("les dix premires nombres pairs sont : ");
+        console.log(tableauNombresPairs);
+    </script>
+</body>
+</html>

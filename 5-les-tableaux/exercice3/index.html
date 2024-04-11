@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice3</title>
+</head>
+<body>
+    <script>
+/*Créez un tableau contenant tous les jours de la semaine sous forme de chaînes de caractères. 
+Affichez ensuite le tableau dans la console, grâce à console.table().
+à l’aide d’une boucle for, bouclez sur le tableau pour afficher chaque jour de la semaine dans la console en utilisant le format :
+ "Le jour X de la semaine est JOUR".*/
+        let jours = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche"];
+            console.table("le tableau des jours");
+            console.table(jours);
+        for (let i = 0; i < jours.length; i++) {
+            console.log("le jour " + (i + 1) + " de la semaine est " + jours[i]);
+            // ou console.log("le jour ${i+1} de la semaine est ${jours[i]}");
+        }
+
+// Resultat attendu:
+  // => pomme
+  // => banane
+  // => cerise
+    </script>
+</body>
+</html>
