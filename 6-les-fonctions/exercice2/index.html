@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice2</title>
+</head>
+<body>
+    <script>
+/*Écrivez une fonction qui prend en paramètre un prénom. La fonction doit retourner “Un pour <prenom>, un pour moi”. 
+Si aucun prénom n'est donné, la fonction doit retourner “Un pour toi, un pour moi”.*/
+        // declaration de la fonction 
+        function paramètreDéfaut(prenom) {
+            prenom = prenom || "toi"; 
+            return("Un pour " + prenom + ", un pour moi !");
+        }
+        console.log(paramètreDéfaut("zoé")); 
+        
+        console.log(paramètreDéfaut()); 
+    </script>
+</body>
+</html>

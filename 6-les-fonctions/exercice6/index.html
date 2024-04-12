@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>exercice6</title>
+</head>
+<body>
+    <script>/*Créez quatre fonctions distinctes pour l'addition, la soustraction, la multiplication et la division. 
+Chaque fonction doit vérifier si les arguments a et b sont bien définis et sont des nombres; si ce n'est pas le cas, retournez "paramètres incorrects". 
+Sinon, effectuez l'opération correspondante et retournez le résultat. addition(a, b)  soustraction(a, b)  multiplication(a, b)  division(a, b)*/
+        function addition(a, b) {
+            if (typeof a !=='number' || typeof b !== 'number' ) {
+                return"paramètres incorrects"
+            }
+            return (a + b)         
+        }
+        let resultat = addition(2, 4)
+        console.log(resultat);
+       
+        
+        function soustraction(a, b) {
+            if (typeof a !=='number' || typeof b !== 'number' ) {
+                return"paramètres incorrects"
+            }
+            return (a - b)         
+        }
+        let resultatSoustraction = soustraction(4, 2)
+        console.log(resultatSoustraction);
+       
+        
+
+        /*function multiplication(a, b);
+       
+
+        function division(a, b);*/
+        
+    </script>
+</body>
+</html>
