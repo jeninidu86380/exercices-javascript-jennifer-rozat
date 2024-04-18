@@ -3,14 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>anagrammes</title>
 </head>
 <body>
-    <script>
+    <script>/* Créez une fonction qui prend deux mots en paramètre et vérifie s'ils sont des anagrammes, c'est-à-dire s'ils contiennent les mêmes lettres dans un ordre différent. 
+            La fonction doit retourner un booléen : true si les mots sont des anagrammes, false sinon.*/
         // transformer string en tableau, trier dans l'ordre alph, retransformer le tableau en string, compare les 2 strings : condition
-        function mot (chien, lion) {
 
+        let mot1 = "chien";
+        let mot2 = "lion";
+
+        /*mot1 = mot1.split(""); 
+        console.log(mot1);
+
+        mot1.sort();
+        console.log(mot1);
+
+        mot1 = mot1.join("");
+        console.log(mot1);
+
+        mot2 = mot2.split("");
+        console.log(mot2);
+
+        mot2.sort();
+        console.log(mot2);
+
+        mot2 = mot2.join("");
+        console.log(mot2);*/
+
+        function sontAnagrammes(mot1, mot2) {
+            mot1 = mot1.split("");
+            mot1.sort();
+            mot1 = mot1.join("");
+
+            mot2 = mot2.split("");
+            mot2.sort();
+            mot2 = mot2.join("");
+
+            if (mot1 === mot2) {
+                return true
+            } else {
+                return false
+            }
         }
+
+        console.log(sontAnagrammes("chien", "lion"));
+        console.log(sontAnagrammes("titi", "toto"));
+
     </script>
 </body>
 </html>

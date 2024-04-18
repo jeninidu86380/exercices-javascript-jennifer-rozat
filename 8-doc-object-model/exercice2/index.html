@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajouter un élément au DOM</title>
+</head>
+<body>
+    <div class="container">
+        <script>
+            let containerDiv = document.querySelector('.container');//sélecion de la div avec la classe container
+
+            let paragraphElement = document.createElement('p');//création de l'élément paragraphe
+
+            paragraphElement.textContent = "lorem ispum";//ajout du texte lorem ipsum au paragraphe
+            
+            containerDiv.appendChild(paragraphElement);//ajout du paragraphe à la div container
+        </script>
+    </div>
+</body>
+</html>
+<!--Dans la <div> avec la classe container, en javascript, ajoutez un paragraphe contenant du lorem ispum-->

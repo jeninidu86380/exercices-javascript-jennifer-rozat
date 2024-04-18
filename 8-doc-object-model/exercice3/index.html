@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changer la Couleur de Fond au clic</title>
+    <style> 
+        body { /* style pour centrer le contenu au milieu de la page*/
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+    </style>
+</head>
+<body>
+    <button id="colorChangeButton">Changer la couleur</button>
+    <script>
+        let colorChangeButton = document.getElementById("colorChangeButton"); // selection du bouton
+
+        colorChangeButton.addEventListener("click", () => { // ajout d'un gestionnaire d'évènements au clic sur le bouton
+            let purpleColor = "purple";// génération d'une couleur de fond 
+            document.body.style.backgroundColor = purpleColor;// changement de la couleur de fond de page
+        }
+    )
+    </script>
+</body>
+</html>
+<!--Créez un bouton qui, lorsqu'il est cliqué, change la couleur de fond de la page (du <body>). Centrez le bouton au milieu de la page (horizontalement et verticalement).-->

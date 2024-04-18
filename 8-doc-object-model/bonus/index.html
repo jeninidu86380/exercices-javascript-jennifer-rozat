@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+</head>
+<body>
+    <header id='header'></header>
+    <footer id='footer'></footer>
+
+    <button class='bouton'>cliquez moi</button>
+    <script> 
+    
+       /* Création de l'élément h1
+        let h1Element = document.createElement('h1');
+
+        // Modification de la taille du h1
+        h1Element.style.fontSize = '50px';
+
+        // Changement de la couleur du h1
+        h1Element.style.color = 'purple'; 
+
+        // Ajout du texte dans le h1
+        h1Element.textContent = "Titre principal";
+        console.log(h1Element);
+
+        // Ajout element H1 => dans element Header
+        let header = document.querySelector('#header');
+        header.appendChild(h1Element);
+        
+        //Supprimer element footer
+        let footer = document.querySelector('#footer');
+        footer.remove();*/
+
+        //Les événements :
+        //addEventListener : Pour réagir aux actions des utilisateurs, on utilise addEventListener() pour attacher un gestionnaire d'événements à un élément.
+        let button = document.querySelector('button');
+        button.addEventListener('click', function() {
+        console.log('Élément cliqué'); // ici au clic sur l'élément, le message 'Élément cliqué' s'affiche dans la console
+        });
+/*L'utilisation du paramètre event est essentielle pour une gestion fine des événements dans les applications web, 
+permettant aux développeurs de réagir précisément et de contrôler le comportement de l'application en réponse aux actions des utilisateurs.
+L'objet event permet également d'invoquer certaines méthodes utiles, telles que preventDefault() pour empêcher l'action par défaut associée à l'événement, 
+ou stopPropagation() pour empêcher l'événement de se propager plus loin dans la hiérarchie du DOM.*/
+        //L’objet event :
+        button.addEventListener('click', function(event) {
+        console.log(event.type); // Affiche le type d'événement, par exemple "click"
+        event.preventDefault(); // Empêche l'action par défaut (utile pour les liens, par exemple)
+        });
+        
+        button.addEventListener('click', function(event) { //preventDefault() est utilisé dans les gestionnaires d'événements pour empêcher le comportement par défaut de l'élément (comme suivre un lien).
+        event.preventDefault(); // Autres actions
+        });
+
+        /*monLien.addEventListener('click', function (event) {
+        event.preventDefault();
+        console.log('Lien cliqué');
+        });
+        // lorsque le lien est cliqué, le message 'Lien cliqué' est affiché dans la console et la page ne se recharge pas*/
+
+    </script>
+</body>
+</html>

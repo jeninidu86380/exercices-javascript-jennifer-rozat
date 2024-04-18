@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatter-liste</title>
+</head>
+<body>      <!--A partir d’un tableau qui contient une liste d’animaux, afficher les séparés par une virgule, mais dans le sens inverse et en majuscules (⚠️ regardez bien l’exemple).-->
+    <script>
+        const mots = [
+            "chat",
+            "chien",
+            "oiseau",
+            "poisson",
+            "souris",
+            "lapin",
+            "tortue",
+            "poule"
+];
+        mots.reverse(); // retournr le tableau(reverse)
+        console.log(mots);
+
+        let motsJoins = mots.join(', ');    // transformer le tableau en string en séparant ', '
+        console.log(motsJoins);
+
+        let resultatFinal = motsJoins.toLocaleUpperCase();  // mettre en majuscules
+        console.log(resultatFinal);
+
+// Résultat attendu :
+"POULE, TORTUE, LAPIN, SOURIS, POISSON, OISEAU, CHIEN, CHAT"
+    </script>
+</body>
+</html>

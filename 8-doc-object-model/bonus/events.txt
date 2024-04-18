@@ -1,0 +1,45 @@
+## **Liste d’events intéressants**
+
+Cette liste n'est pas exhaustive, mais elle couvre certains des événements les plus couramment utilisés pour interagir avec les utilisateurs via leur navigateur. Chaque type d'événement permet de créer des interactions spécifiques et d'augmenter la réactivité et l'interactivité des applications web.
+
+### **Événements de la souris**
+
+- **click** : Se déclenche lorsqu'un élément est cliqué.
+- **dblclick** : Se déclenche lorsqu'un élément est double-cliqué.
+- **mousedown** : Se déclenche lorsqu'un bouton de la souris est enfoncé sur un élément.
+- **mouseup** : Se déclenche lorsqu'un bouton de la souris est relâché au-dessus d'un élément.
+- **mousemove** : Se déclenche lorsque la souris est déplacée sur un élément.
+- **mouseover** : Se déclenche lorsque le pointeur de la souris entre sur un élément.
+- **mouseout** : Se déclenche lorsque le pointeur de la souris quitte un élément.
+
+### **Événements du clavier**
+
+- **keydown** : Se déclenche lorsqu'une touche est enfoncée.
+- **keyup** : Se déclenche lorsqu'une touche est relâchée.
+- **keypress** : Se déclenche lorsqu'une touche est pressée et relâchée (déprécié).
+
+### **Événements d'interface**
+
+- **load** : Se déclenche lorsqu'une ressource et ses ressources dépendantes ont fini de charger.
+- **unload** : Se déclenche lorsque la page est en train d'être déchargée (par exemple, lors du passage à une autre page).
+- **resize** : Se déclenche lorsque la fenêtre du navigateur est redimensionnée.
+- **scroll** : Se déclenche lors du défilement d'un élément ou de la fenêtre.
+
+### **Événements de formulaire**
+
+- **submit** : Se déclenche lors de la soumission d'un formulaire.
+- **change** : Se déclenche pour les éléments **`<input>`**, **`<select>`**, et **`<textarea>`** lorsque leur valeur change.
+- **input** : Se déclenche chaque fois que la valeur d'un champ **`<input>`**, **`<select>`**, ou **`<textarea>`** est modifiée par l'utilisateur.
+- **focus** : Se déclenche lorsque l'élément reçoit le focus.
+- **blur** : Se déclenche lorsque l'élément perd le focus.
+
+### **Événements de toucher (pour les appareils tactiles)**
+
+- **touchstart** : Se déclenche lorsqu'un doigt est posé sur l'écran tactile.
+- **touchmove** : Se déclenche lorsqu'un doigt se déplace sur l'écran tactile.
+- **touchend** : Se déclenche lorsqu'un doigt est retiré de l'écran tactile.
+- **click** : L'utilisateur clique sur un élément.
+- **mouseover** : Le pointeur de la souris entre sur un élément.
+- **mouseout** : Le pointeur de la souris quitte un élément.
+- **keydown** : L'utilisateur appuie sur une touche du clavier.
+- **load** : Un ressource a fini de charger.
